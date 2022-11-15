@@ -35,13 +35,16 @@ function HomePage() {
             }}>
                 <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
-                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+                <Timeline searchValue={valorDoFiltro} playlists={playlists}> 
                     Conteúdo
                 </Timeline>
             </div>
         </>
     );
 }
+//<Timeline searchValue={valorDoFiltro} playlists={playlists}> para pegar do bd
+//<Timeline searchValue={valorDoFiltro} playlists={config.playlists}> para pegar do config.js
+
 
 export default HomePage
 
